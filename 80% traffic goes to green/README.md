@@ -47,7 +47,7 @@ export AWS_SECRET_ACCESS_KEY="your secret access key here"
 - this way the size of the autoscaling group for blue is kept to 1 and 20% of the traffic goes to it.
 
 ----------------------------------------------------------------------------------------------------------------------------
-### Commands needed to build the webservers cluster and load balancer
+### Commands needed to build the webservers cluster and load balancer.
 - execute `terraform init` - to initialize the provider and download the neccesery plugins.
 - execute `terraform plan` - to create execution plan for changes to be applied.
 - execute `terraform apply` - to apply the desired changes.
