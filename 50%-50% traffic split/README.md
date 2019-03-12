@@ -42,7 +42,7 @@ export AWS_SECRET_ACCESS_KEY="your secret access key here"
 ### How to change the code so you can redirect the traffic.
 - you need modify `main.tf` file.
 - you need to change `min_size` and `max_size` parameters of `aws_autoscaling_group` resources. 
-- to split the traffic in half both `min_size` and `max_size` parameters of `aws_autoscaling_group` resources need to be set to 1. 
+- to split the traffic in half both `min_size = 1` and `max_size = 1` parameters of `aws_autoscaling_group` resources need to be set to 1. 
 - this way the size of the autoscaling group is kept to 1 for both resources and traffic is split equally 
 
 ----------------------------------------------------------------------------------------------------------------------------
