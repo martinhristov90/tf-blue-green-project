@@ -37,8 +37,15 @@ export AWS_SECRET_ACCESS_KEY="your secret access key here"
    
 - clone the repository to your local computer: `git clone https://github.com/nikcbg/tf-blue-green-project`.
 - go into the cloned repo on your computer: `cd tf-blue-green-project`.
-
+- go into the subfolder of the repository: `cd 50%-50% traffic split`.
 ------------------------------------------------------------------------------------------------------------------
+### How to change the code so you can redirect the traffic.
+- you need modify `main.tf` file.
+- you need to change `min_size` and `max_size` parameters of `aws_autoscaling_group` resources. 
+- to split the traffic in half both `min_size` and `max_size` parameters of `aws_autoscaling_group` resources need to be set to 1. 
+- this way the size of the autoscaling group is kept to 1 for both resources and traffic is split equally 
+
+----------------------------------------------------------------------------------------------------------------------------
 ### Commands needed to build the webservers cluster and load balancer
 - execute `terraform init` - to initialize the provider and download the neccesery plugins.
   
@@ -75,4 +82,4 @@ Outputs:
 elb_dns_name = terraform-asg-example-123456789.us-east-1.elb.amazonaws.com
 
 ```
-- execute `terraform destroy` - to destroy the resource that we just created, the output should diplay the following:
+- execute `terraform destroy` - to destroy the resource that we just created.
