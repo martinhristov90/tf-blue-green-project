@@ -9,7 +9,7 @@
 
 ---------------------------------------------------------------------------------------------------------------
 #### Configuration code that redirects all the traffic to blue environment 
-[100% traffic goes to green](https://github.com/nikcbg/tf-blue-green-project/tree/master/100%25%20traffic%20goes%20to%20green) - Terraform configuration code that redirects all the traffic to the blue environment.
+[100% traffic goes to blue](https://github.com/nikcbg/tf-blue-green-project/tree/master/100%25%20traffic%20goes%20to%20blue) - Terraform configuration code that redirects all the traffic to the blue environment.
 
 -----------------------------------------------------------------------------------------------------------------
 #### Configuration code that splits the traffic between blue and green environments
