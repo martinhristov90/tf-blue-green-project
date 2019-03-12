@@ -44,7 +44,7 @@ export AWS_SECRET_ACCESS_KEY="your secret access key here"
 - you need to change `min_size` and `max_size` parameters of `aws_autoscaling_group example_green` resources to 0.  
 - this way the size of the autoscaling group for green is kept to 0 and not traffic goes to it.
 - you need to keep `min_size` and `max_size` parameters of `aws_autoscaling_group example_blue` resources to 1.  
-- this way the size of the autoscaling group for blue is kept to 1 and all traffic goes to it since it is the available resorce in the web cluster.
+- this way the size of the autoscaling group for blue is kept to 1 and all traffic goes to it since it is the only available resorce in the web cluster.
 
 ----------------------------------------------------------------------------------------------------------------------------
 ### Commands needed to build the webservers cluster and load balancer
