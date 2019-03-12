@@ -1,4 +1,4 @@
-# 20% traffic goes to green
+# 80% traffic goes to green
 
 ### Purpose of the folder
 - This part of the repository creates webservers cluster(using EC2 and Auto Scaling) and load balancer in AWS. The load balancer listens on port 80 and returns "blue" or "green" text every time the web browser is refreshed.
