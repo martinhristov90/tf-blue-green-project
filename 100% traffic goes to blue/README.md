@@ -40,7 +40,7 @@ export AWS_SECRET_ACCESS_KEY="your secret access key here"
 - go into the subfolder of the repository: `cd 100% traffic goes to blue`.
 ------------------------------------------------------------------------------------------------------------------
 ### How to change the code so you can redirect the traffic.
-- you need modify `main.tf` file.
+- you need to modify `main.tf` file.
 - you need to change `min_size` and `max_size` parameters of `aws_autoscaling_group example_green` resources to 0.  
 - this way the size of the autoscaling group for green is kept to 0 and not traffic goes to it.
 - you need to keep `min_size` and `max_size` parameters of `aws_autoscaling_group example_blue` resources to 1.  
