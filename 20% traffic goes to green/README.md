@@ -41,7 +41,7 @@ export AWS_SECRET_ACCESS_KEY="your secret access key here"
 ------------------------------------------------------------------------------------------------------------------
 ### How to change the code so you can redirect the traffic.
 - you need to modify `main.tf` file.
-- you need to change `min_size = 1` and `max_size = 5` parameters of `aws_autoscaling_group example_green` resources.  
+- you need to change `min_size = 4` and `max_size = 5` parameters of `aws_autoscaling_group example_green` resources.  
 - this way the size of the autoscaling group for green is kept to 1 and only 20% of the traffic goes to it.
 - you need to keep `min_size = 1` and `max_size = 5` parameters of `aws_autoscaling_group example_blue`.  
 - this way the size of the autoscaling group for blue is kept to 4 and 80% of the traffic goes to it.
